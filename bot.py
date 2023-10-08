@@ -1,10 +1,12 @@
 import asyncio
 import logging
+import os
 
 from aiogram import Bot, Dispatcher
+from sqlalchemy import URL
 from config_data.config import Config, load_config
-# from handlers import other_handlers, user_handlers
 from keyboards.main_meny import set_main_menu
+from db import BaseModel, create_async_engine, get_session_maker, proceed_schemas
 
 
 logger = logging.getLogger(__name__)
@@ -26,6 +28,21 @@ async def main():
     dp = Dispatcher()
 
     await set_main_menu(bot)
+
+    postger_url = URL.create(
+        "postgresql+asyncpg",
+        username=os.getenv("DATABASE_USERNAME"),
+        password=os.getenv("DATABASE_PASSWORD"),
+        host=os.getenv("DATABASE_HOST"),
+        port=os.getenv("DATABASE_PORT"),
+        database=os.getenv("DATABASE_NAME")
+    )
+
+    print(postger_url)
+
+    async_engine = create_async_engine(postger_url)
+    session_maker = get_session_maker(async_engine)
+    await proceed_schemas(async_engine, BaseModel.metadata)
 
     # Регистриуем роутеры в диспетчере
     # dp.include_router(user_handlers.router)
