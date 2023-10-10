@@ -1,4 +1,4 @@
-__all__ = ["BaseModel", "create_async_engine", "proceed_schemas", "get_session_maker"]
+__all__ = ["BaseModel", "create_async_engine", "proceed_schemas", "get_session_maker", "User"]
 
 from .base import BaseModel
 from .engine import create_async_engine, proceed_schemas, get_session_maker
