@@ -9,7 +9,7 @@ from config_data.config import Config, load_config
 from keyboards.main_meny import set_main_menu
 from db import create_async_engine, get_session_maker
 from middlewares.check_registred_user import Registration_check
-from handlers import basic, list_links
+from handlers import basic, list_links, second_level
 
 
 logger = logging.getLogger(__name__)
@@ -52,8 +52,10 @@ async def main():
     # await proceed_schemas(async_engine, BaseModel.metadata)
 
     # Регистриуем роутеры в диспетчере
+    dp.include_router(second_level.router)
     dp.include_router(list_links.router)
     dp.include_router(basic.router)
+
 
 
 
