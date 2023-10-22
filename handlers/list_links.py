@@ -13,7 +13,7 @@ async def process_link_command(message: Message):
     )
 
 
-# Этот хэндлер будет срабатывать на команду "/tglink"
+
 @router.message(Command(commands='tglink'))
 async def process_tglink_command(message: Message):
     await message.answer(
