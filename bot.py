@@ -9,6 +9,7 @@ from config_data.config import Config, load_config
 from keyboards.main_meny import set_main_menu
 from db import create_async_engine, get_session_maker
 from middlewares.check_registred_user import Registration_check
+from handlers import basic, list_links
 
 
 logger = logging.getLogger(__name__)
@@ -28,10 +29,11 @@ async def main():
     bot = Bot(token=config.tg_bot.token,
               parse_mode='HTML')
     dp = Dispatcher()
-    dp.message.middleware(Registration_check)
-    dp.callback_query.middleware(Registration_check)
+    # dp.message.middleware(Registration_check)
+    # dp.callback_query.middleware(Registration_check)
 
     await set_main_menu(bot)
+
 
     postger_url = URL.create(
         "postgresql+asyncpg",
@@ -50,8 +52,10 @@ async def main():
     # await proceed_schemas(async_engine, BaseModel.metadata)
 
     # Регистриуем роутеры в диспетчере
-    # dp.include_router(user_handlers.router)
-    # dp.include_router(other_handlers.router)
+    dp.include_router(list_links.router)
+    dp.include_router(basic.router)
+
+
 
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot, session_maker=session_maker)

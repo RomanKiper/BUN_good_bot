@@ -1,27 +1,32 @@
 
-LEXICON: dict[str, str] = {
-    'forward': '>>',
-    'backward': '<<',
-    '/start': '<b>Привет, читатель!</b>\n\nЭто бот, в котором '
-              'ты можешь прочитать книгу Рэя Брэдбери "Марсианские '
-              'хроники"\n\nЧтобы посмотреть список доступных '
-              'команд - набери /help',
-    '/help': '<b>Это бот-читалка</b>\n\nДоступные команды:\n\n/beginning - '
-             'перейти в начало книги\n/continue - продолжить '
-             'чтение\n/bookmarks - посмотреть список закладок\n/help - '
-             'справка по работе бота\n\nЧтобы сохранить закладку - '
-             'нажмите на кнопку с номером страницы\n\n<b>Приятного чтения!</b>',
-    '/bookmarks': '<b>Это список ваших закладок:</b>',
-    'edit_bookmarks': '<b>Редактировать закладки</b>',
-    'edit_bookmarks_button': '❌ РЕДАКТИРОВАТЬ',
-    'del': '❌',
-    'cancel': 'ОТМЕНИТЬ',
-    'no_bookmarks': 'У вас пока нет ни одной закладки.\n\nЧтобы '
-                    'добавить страницу в закладки - во время чтения '
-                    'книги нажмите на кнопку с номером этой '
-                    'страницы\n\n/continue - продолжить чтение',
-    'cancel_text': '/continue - продолжить чтение'
+LEXICON_RU: dict[str, str] = {
+    '/start': 'Привет!\n\nЯ Bun_bot!\n\n'
+              'Если хотите - можете мне что-нибудь прислать или '
+              'отправить команду /help',
+    '/help': 'Я просто отправляю вам копию вашего сообщения',
+    '/description': '😎Bun_bot является личным помошником КРМ. Основная задача - оперативно давать запрошенную информацию.'
+                    'На данном этапе Bun_bot является "сырой" моделью, но его функционал будет постоянно совершенствоваться. И в итоге он станет незаменимым помошником в работе.🥷',
+    'no_echo': 'Данный тип апдейтов не поддерживается '
+               'методом send_copy',
+    '/insta_links': '<b>Ссылки на каналы инстаграм:</b>\n'
+        '<a href="https://www.instagram.com/slivkiby">www.instagram.com/slivkiby</a>\n\n'
+    '<a href="https://www.instagram.com/giperspros">www.instagram.com/giperspros</a>\n\n'
+'<a href="https://www.instagram.com/slivkiby_brest">www.instagram.com/slivkiby_brest</a>\n\n'
+'<a href="https://www.instagram.com/slivkiby_gomel">www.instagram.com/slivkiby_gomel</a>\n\n'
+'<a href="https://www.instagram.com/slivkiby_mogilev">www.instagram.com/slivkiby_mogilev</a>\n\n'
+'<a href="https://www.instagram.com/slivki_grodno">www.instagram.com/slivki_grodno</a>\n\n'
+'<a href="https://www.instagram.com/slivkiby_vitebsk">www.instagram.com/slivkiby_vitebsk</a>\n\n'
+'<a href="https://www.instagram.com/slivkiby_svetlogorsk">www.instagram.com/slivkiby_svetlogorsk</a>\n\n'
+'<a href="https://www.instagram.com/slivkiby_pinsk">www.instagram.com /slivkiby_pinsk</a>\n\n'
+'<a href="https://www.instagram.com/slivkiby_bobruisk">www.instagram.com/slivkiby_bobruisk</a>\n\n'
+'<a href="https://www.instagram.com/slivki_baranovichi">https://www.instagram.com/slivki_baranovichi</a>\n\n'
+'<a href="https://www.instagram.com/slivki_borisov">www.instagram.com/slivki_borisov</a>\n\n'
+'<a href="https://www.instagram.com/slivkiby_orsha">www.instagram.com/slivkiby_orsha</a>\n'
+
 }
+
+
+# https://www.instagram.com/slivkiby_orsha /
 
 
 LEXICON_COMMANDS: dict[str, str] = {
@@ -30,3 +35,4 @@ LEXICON_COMMANDS: dict[str, str] = {
     '/our_media': 'Наши медиа🌐',
     '/download_app': 'Наше приложение💾'
 }
+
