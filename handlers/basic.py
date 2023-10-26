@@ -32,6 +32,8 @@ async def get_main_menu(message: Message):
     )
     await message.delete()
 
+    #vkj;zlxkcv
+
 
 @router.message(Command(commands='employee'))
 async def get_main_menu(message: Message):
