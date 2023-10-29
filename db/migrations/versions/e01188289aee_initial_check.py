@@ -1,7 +1,7 @@
 """Initial check
 
 Revision ID: e01188289aee
-Revises: 
+Revises:
 Create Date: 2023-10-10 00:21:01.953038
 
 """

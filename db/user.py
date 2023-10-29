@@ -1,6 +1,6 @@
 import datetime
 
-from sqlalchemy import Column, Integer, VARCHAR, DATE
+from sqlalchemy import Column, Integer, VARCHAR, DATE, ForeignKey
 
 from .base import BaseModel
 
@@ -15,3 +15,16 @@ class User(BaseModel):
 
     def __str__(self) -> str:
         return f"<User:{self.user_id}>"
+
+class User_message(BaseModel):
+    __tablename__ = "user_messages"
+
+    message_id = Column(Integer, nullable=False, primary_key=True)
+    reg_date = Column(DATE, default=datetime.date.today())
+    text_message = Column(VARCHAR(300), nullable=False)
+    user_id = Column(Integer, ForeignKey('users.user_id'), nullable=False)
+
+    # def __str__(self) -> str:
+    #     return f"<User_message:{self.message_id}>"
+
+
