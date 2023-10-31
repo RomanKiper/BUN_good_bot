@@ -24,7 +24,7 @@ class User_message(BaseModel):
     text_message = Column(VARCHAR(300), nullable=False)
     user_id = Column(Integer, ForeignKey('users.user_id'), nullable=False)
 
-    # def __str__(self) -> str:
-    #     return f"<User_message:{self.message_id}>"
+    def __str__(self) -> str:
+        return f"<User_message:{self.message_id}>"
 
 

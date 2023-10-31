@@ -12,3 +12,21 @@ def get_inline_connection_manager():
     ]
     keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons_con)
     return keyboard
+
+
+
+# Создаем объекты инлайн-кнопок
+yes_news_button = InlineKeyboardButton(
+    text='Да',
+    callback_data='yes_news'
+)
+no_news_button = InlineKeyboardButton(
+    text='Нет, спасибо',
+    callback_data='no_news')
+# Добавляем кнопки в клавиатуру в один ряд
+keyboard_yes_no: list[list[InlineKeyboardButton]] = [
+    [yes_news_button, no_news_button]
+]
+# Создаем объект инлайн-клавиатуры
+markup_yes_no = InlineKeyboardMarkup(inline_keyboard=keyboard_yes_no)
+

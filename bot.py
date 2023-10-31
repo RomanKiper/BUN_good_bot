@@ -3,12 +3,13 @@ import logging
 import os
 from aiogram import Bot, Dispatcher
 from sqlalchemy import URL
+
+import db.user
+
 from config_data.config import Config, load_config
 from keyboards.main_meny import set_main_menu
 from db import create_async_engine, get_session_maker
-from middlewares.check_registred_user import Registration_check
-from handlers import basic, list_links, second_level, connection_manager
-
+from handlers import basic, list_links, second_level, connection_manager, fsm_file
 
 logger = logging.getLogger(__name__)
 
@@ -18,7 +19,6 @@ async def main():
         level=logging.INFO,
         format='%(filename)s:%(lineno)d #%(levelname)-8s '
                '[%(asctime)s] - %(name)s - %(message)s')
-
 
     logger.info('Starting bot')
 
@@ -32,7 +32,6 @@ async def main():
 
     await set_main_menu(bot)
 
-
     postger_url = URL.create(
         "postgresql+asyncpg",
         username=os.getenv("DATABASE_USERNAME"),
@@ -43,6 +42,7 @@ async def main():
     )
 
     print(postger_url)
+    print(db.user.User_message.message_id)
 
     async_engine = create_async_engine(postger_url)
     session_maker = get_session_maker(async_engine)
@@ -50,14 +50,15 @@ async def main():
     # await proceed_schemas(async_engine, BaseModel.metadata)
 
     # Регистриуем роутеры в диспетчере
+    dp.include_router(fsm_file.router)
     dp.include_router(connection_manager.router)
     dp.include_router(second_level.router)
     dp.include_router(list_links.router)
     dp.include_router(basic.router)
 
-
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot, session_maker=session_maker)
+
 
 if __name__ == '__main__':
     asyncio.run(main())

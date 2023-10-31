@@ -22,6 +22,3 @@ async def inline_connect_manager_phone(callback: types.CallbackQuery):
                                        f'☎ +375291803164')
 
 
-@router.callback_query(F.data == 'connect3')
-async def inline_connect_client(callback: types.CallbackQuery):
-    await callback.message.answer(text='')
