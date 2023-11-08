@@ -103,12 +103,23 @@ LEXICON_btn_price_statistic: dict[str, str] = {
 
 
 LEXICON_PRICE: dict[str, str] = {
-    'photo': 'Следующее фото',
+    'photo_telega': 'Следующее фото',
+    'photo_site': 'Следующее фото',
     'photo_telejka1': 'AgACAgIAAxkBAAINHmVKjdzDptB9VK4LolImH3c2NLjuAAKg5zEbRd9YSs8U3M8mCR0SAQADAgADeQADMwQ',
     'photo_tekejka2': 'AgACAgIAAxkBAAINIWVKjexPTuwuERVEMlRj_HEuEGD0AAKh5zEbRd9YSo403bNxf-m8AQADAgADeQADMwQ',
     'telejka_info': 'Пост - 798 рублей\n'
                     'Количество подписчиков - 46 000\n'
                     'Количество просмотров - более 10 000\n'
-                    '<a href="https://t.me/slivki_by">Ссылка на telegram</a>\n\n'
+                    '<a href="https://t.me/slivki_by">Ссылка на telegram</a>\n\n',
 
+    'photo_podlojka1': 'AgACAgIAAxkBAAIOOGVL7fAzVkjzVHMOktoocnzikLqYAAKd0jEbRd9gSpf4vTYXHFFcAQADAgADeQADMwQ',
+    'photo_podlojka2': 'AgACAgIAAxkBAAIOO2VL7ftin59BSKAenrWD_fhM837DAAKe0jEbRd9gSrTIYq3h52IXAQADAgADeQADMwQ',
+    'podlojka_info': 'Брендированная подложка  - сквозная подложка или в определеннй рубрике. '
+                     'Единовременно стоит не более пяти подложек. При обновлении или открытии новой страницы происходит смена. '
+                     'Дублируется в мобильной версии сайта.\n'
+                     'Показы за месяц - 2 164 715\n'
+                     'Клики 3 835\n'
+                     'Стоимость за сутки - 185 бел. руб.\n'
+                     'Стоимость за месяц - 2998 бел.руб (Минск)\n'
+                     'Стоимость за месяц - 4998 бел.руб (Вся РБ)\n',
 }
