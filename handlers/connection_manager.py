@@ -1,12 +1,11 @@
 from aiogram import Router, F, types
-from aiogram.types import Message
 from keyboards.inline.inline_second_level import get_inline_connection_manager
 
 router = Router()
 
 
-@router.callback_query(F.data == 'btn_main_menu_7')
-async def inline_download_app(callback: types.CallbackQuery):
+@router.callback_query(F.data == 'manager')
+async def get_inline_manager_kb(callback: types.CallbackQuery):
     await callback.message.answer(text="👇👇Сделай выбор друже 👇👇", reply_markup=get_inline_connection_manager())
 
 
@@ -20,5 +19,3 @@ async def inline_connect_manager_chat(callback: types.CallbackQuery):
 async def inline_connect_manager_phone(callback: types.CallbackQuery):
     await callback.message.answer(text=f'Позвонить менеджеру\n'
                                        f'☎ +375291803164')
-
-

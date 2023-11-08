@@ -66,5 +66,3 @@ def get_inline_connection_manager():
     ]
     keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons_con)
     return keyboard
-
-

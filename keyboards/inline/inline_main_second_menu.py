@@ -3,11 +3,9 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from lexicon.lexicon import LEXICON_btn_main_menu, LEXICON_btn_price_statistic
 
 
-
-
 def create_inline_kb_main_menu(width: int,
-                     *args: str,
-                     **kwargs: str) -> InlineKeyboardMarkup:
+                               *args: str,
+                               **kwargs: str) -> InlineKeyboardMarkup:
     kb_builder = InlineKeyboardBuilder()
     buttons: list[InlineKeyboardButton] = []
     if args:
@@ -25,8 +23,8 @@ def create_inline_kb_main_menu(width: int,
 
 
 def create_inline_kb_second_menu(width: int,
-                     *args: str,
-                     **kwargs: str) -> InlineKeyboardMarkup:
+                                 *args: str,
+                                 **kwargs: str) -> InlineKeyboardMarkup:
     kb_builder = InlineKeyboardBuilder()
     buttons: list[InlineKeyboardButton] = []
     if args:

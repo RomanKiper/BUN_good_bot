@@ -1,7 +1,7 @@
 import asyncio
 import logging
 import os
-from aiogram import Bot, Dispatcher
+from aiogram import Bot, Dispatcher, types
 from sqlalchemy import URL
 
 import db.user
@@ -9,7 +9,9 @@ import db.user
 from config_data.config import Config, load_config
 from keyboards.main_meny import set_main_menu
 from db import create_async_engine, get_session_maker
-from handlers import basic, list_links, second_level, connection_manager, fsm_file
+from handlers import basic, list_links, second_level, connection_manager, fsm_file, \
+    statistic_price_telegram
+
 
 logger = logging.getLogger(__name__)
 
@@ -42,7 +44,6 @@ async def main():
     )
 
     print(postger_url)
-    print(db.user.User_message.message_id)
 
     async_engine = create_async_engine(postger_url)
     session_maker = get_session_maker(async_engine)
@@ -50,6 +51,7 @@ async def main():
     # await proceed_schemas(async_engine, BaseModel.metadata)
 
     # Регистриуем роутеры в диспетчере
+    dp.include_router(statistic_price_telegram.router)
     dp.include_router(fsm_file.router)
     dp.include_router(connection_manager.router)
     dp.include_router(second_level.router)
