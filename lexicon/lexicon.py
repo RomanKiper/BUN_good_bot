@@ -104,6 +104,8 @@ LEXICON_btn_price_statistic: dict[str, str] = {
 
 LEXICON_PRICE: dict[str, str] = {
     'photo_telega': 'Следующее фото',
+    'btn_main_menu_1': 'Вернуться в меню',
+    'manager': 'Связаться с менеджером',
     'photo_site': 'Следующее фото',
     'photo_telejka1': 'AgACAgIAAxkBAAINHmVKjdzDptB9VK4LolImH3c2NLjuAAKg5zEbRd9YSs8U3M8mCR0SAQADAgADeQADMwQ',
     'photo_tekejka2': 'AgACAgIAAxkBAAINIWVKjexPTuwuERVEMlRj_HEuEGD0AAKh5zEbRd9YSo403bNxf-m8AQADAgADeQADMwQ',
@@ -114,11 +116,9 @@ LEXICON_PRICE: dict[str, str] = {
 
     'photo_podlojka1': 'AgACAgIAAxkBAAIOOGVL7fAzVkjzVHMOktoocnzikLqYAAKd0jEbRd9gSpf4vTYXHFFcAQADAgADeQADMwQ',
     'photo_podlojka2': 'AgACAgIAAxkBAAIOO2VL7ftin59BSKAenrWD_fhM837DAAKe0jEbRd9gSrTIYq3h52IXAQADAgADeQADMwQ',
-    'podlojka_info': 'Брендированная подложка  - сквозная подложка или в определеннй рубрике. '
-                     'Единовременно стоит не более пяти подложек. При обновлении или открытии новой страницы происходит смена. '
-                     'Дублируется в мобильной версии сайта.\n'
-                     'Показы за месяц - 2 164 715\n'
-                     'Клики 3 835\n'
+    'podlojka_info': 'Брендированная подложка. Дублируется в мобильной версии сайта.\n'
+                     'CTR - 0.17% / CPM - 16,65 бел.руб.\n'
+                     'Показы за месяц - 2 164 715, Клики 3 835 \n'
                      'Стоимость за сутки - 185 бел. руб.\n'
                      'Стоимость за месяц - 2998 бел.руб (Минск)\n'
                      'Стоимость за месяц - 4998 бел.руб (Вся РБ)\n',
