@@ -36,10 +36,11 @@ async def get_main_menu(message: Message):
 
 @router.callback_query(F.data == "btn_main_menu_1")
 async def get_second_menu(callback: types.CallbackQuery):
-    keyboard = create_inline_kb_second_menu(2, 'site_slivki', 'instagram_sl', 'telegram_sl', 'tiktok_sl',
-                                            'others_media', 'regions_sl')
+    keyboard = create_inline_kb_second_menu(2, 'site_slivki_advertising', 'site_slivki_promotion', 'instagram_sl', 'telegram_sl', 'tiktok_sl',
+                                            'app_advertising', 'others_media', 'regions_sl')
     await callback.message.answer(text='В данном разделе ты получишь цены, статистику и примеры размещения рекламы.',
                                   reply_markup=keyboard)
+    await callback.message.delete()
 
 
 @router.message(Command(commands='employee'))
@@ -62,7 +63,7 @@ async def get_description(message: Message):
 async def send_echo(message: Message):
     try:
         await message.send_copy(chat_id=message.chat.id)
-        photo_id = message.photo[-1].file_id
+        photo_id = message.photo[0].file_id
         await message.answer(f"ID фотографии: {photo_id}")
     except TypeError:
         await message.reply(text=LEXICON_RU['no_echo'])

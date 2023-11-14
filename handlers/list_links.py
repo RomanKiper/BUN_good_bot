@@ -34,5 +34,5 @@ async def process_link_command(message: Message):
 @router.message(Command(commands='tglink'))
 async def process_tglink_command(message: Message):
     await message.answer(
-        text='<a href="https://web.telegram.org/k/#@slivki_by">telegram.org/k/#@slivki_by</a>'
-    )
+        text='<a href="https://web.telegram.org/k/#@slivki_by">telegram.org/k/#@slivki_by</a>')
+    await message.delete()

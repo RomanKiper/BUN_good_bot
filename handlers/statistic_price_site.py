@@ -3,24 +3,61 @@ from aiogram.types import Message, InputMediaPhoto
 from keyboards.inline.inline_price_kb_builder import markup_prev_next
 from lexicon.lexicon import LEXICON_PRICE
 
-
 router = Router()
 
+first_photo = LEXICON_PRICE['first_photo']
 photo_podlojka1 = LEXICON_PRICE['photo_podlojka1']
 photo_podlojka2 = LEXICON_PRICE['photo_podlojka2']
+photo_podlojka3 = LEXICON_PRICE['photo_podlojka3']
+banner_top1 = LEXICON_PRICE['banner_top1']
+banner_top2 = LEXICON_PRICE['banner_top2']
+banner_top3 = LEXICON_PRICE['banner_top3']
+brendbox1 = LEXICON_PRICE['brendbox1']
+brendbox2 = LEXICON_PRICE['brendbox2']
+brendbox3 = LEXICON_PRICE['brendbox3']
+brendbox_heading1 = LEXICON_PRICE['brendbox_heading1']
+brendbox_heading2 = LEXICON_PRICE['brendbox_heading2']
+floating1 = LEXICON_PRICE['floating1']
+floating2 = LEXICON_PRICE['floating2']
+banner_horizontal1 = LEXICON_PRICE['banner_horizontal1']
+banner_horizontal2 = LEXICON_PRICE['banner_horizontal2']
+advertising_news1 = LEXICON_PRICE['advertising_news1']
+advertising_news2 = LEXICON_PRICE['advertising_news2']
+brendbox_premium1 = LEXICON_PRICE["brendbox_premium1"]
+brendbox_premium2 = LEXICON_PRICE["brendbox_premium2"]
 
 # Список ID фотографий
-photo_ids = [photo_podlojka1, photo_podlojka2]
+photo_ids = [first_photo, photo_podlojka1, photo_podlojka2, photo_podlojka3, banner_top1, banner_top2, banner_top3,
+             brendbox1, brendbox2, brendbox3, brendbox_heading1, brendbox_heading2, floating1, floating2,
+             banner_horizontal1, banner_horizontal2, advertising_news1, advertising_news2, brendbox_premium1, brendbox_premium2]
 
 caption_dict = {
+    first_photo: LEXICON_PRICE['first_photo_info'],
     photo_podlojka1: LEXICON_PRICE['podlojka_info'],
-    photo_podlojka2: LEXICON_PRICE['podlojka_info'],
+    photo_podlojka2: LEXICON_PRICE['podlojka_info2'],
+    photo_podlojka3: LEXICON_PRICE['podlojka_info2'],
+    banner_top1: LEXICON_PRICE['banner_top_info'],
+    banner_top2: LEXICON_PRICE['banner_top_info2'],
+    banner_top3: LEXICON_PRICE['banner_top_info2'],
+    brendbox1: LEXICON_PRICE['brendbox_info'],
+    brendbox2: LEXICON_PRICE['brendbox_info2'],
+    brendbox3: LEXICON_PRICE['brendbox_info3'],
+    brendbox_heading1: LEXICON_PRICE['brendbox_heading_info'],
+    brendbox_heading2: LEXICON_PRICE['brendbox_heading_info2'],
+    floating1: LEXICON_PRICE['floating_info'],
+    floating2: LEXICON_PRICE['floating_info2'],
+    banner_horizontal1: LEXICON_PRICE['banner_horizontal_info'],
+    banner_horizontal2: LEXICON_PRICE['banner_horizontal_info2'],
+    advertising_news1: LEXICON_PRICE['advertising_news_info'],
+    advertising_news2: LEXICON_PRICE['advertising_news_info2'],
+    brendbox_premium1: LEXICON_PRICE['brendbox_premium_info'],
+    brendbox_premium2: LEXICON_PRICE['brendbox_premium_info2'],
 }
 
 current_photo_index = 0
 
 
-@router.callback_query(F.data == 'site_slivki')
+@router.callback_query(F.data == 'site_slivki_advertising')
 async def on_start(message: Message, bot: Bot):
     await bot.send_photo(chat_id=message.from_user.id,
                          photo=photo_ids[current_photo_index],

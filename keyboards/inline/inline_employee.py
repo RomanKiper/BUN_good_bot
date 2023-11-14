@@ -3,14 +3,14 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 inline_kb_employee = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton(
-            text="Конструктор КП",
-            callback_data='offer_maker'
+            text="Полезные ссылки",
+            callback_data='useful_links'
         )
     ],
     [
         InlineKeyboardButton(
-            text="Примеры КП",
-            callback_data='examples_pdf'
+            text="Рабочие таблицы",
+            callback_data='tables_links'
         )
     ],
     [

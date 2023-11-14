@@ -9,7 +9,7 @@ router = Router()
 
 @router.callback_query(F.data == "telegram_sl")
 async def answer_data_syte(callback: types.CallbackQuery, bot: Bot):
-    markup = get_markup_price(2, 'photo_telega', 'btn_main_menu_1', 'manager')
+    markup = get_markup_price(2, 'btn_main_menu_1', 'photo_telega', 'manager')
     await bot.send_photo(chat_id=callback.from_user.id,
                          photo=LEXICON_PRICE['photo_telejka1'],
                          caption=LEXICON_PRICE['telejka_info'],
@@ -19,7 +19,7 @@ async def answer_data_syte(callback: types.CallbackQuery, bot: Bot):
 
 @router.callback_query(F.data == 'photo_telega')
 async def process_button_press(callback: CallbackQuery, bot: Bot):
-    markup = get_markup_price(2, 'photo_telega', 'btn_main_menu_1', 'manager')
+    markup = get_markup_price(2, 'btn_main_menu_1', 'photo_telega', 'manager')
     try:
         await bot.edit_message_media(
             chat_id=callback.message.chat.id,
