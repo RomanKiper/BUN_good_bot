@@ -10,7 +10,7 @@ from config_data.config import Config, load_config
 from keyboards.main_meny import set_main_menu
 from db import create_async_engine, get_session_maker
 from handlers import basic, list_links, second_level, connection_manager, fsm_file, \
-    statistic_price_telegram, statistic_price_site, statistic_price_insta
+    statistic_price_telegram, statistic_price_site, statistic_price_insta, statistic_price_action
 
 
 logger = logging.getLogger(__name__)
@@ -54,6 +54,7 @@ async def main():
     dp.include_router(statistic_price_telegram.router)
     dp.include_router(statistic_price_insta.router)
     dp.include_router(statistic_price_site.router)
+    dp.include_router(statistic_price_action.router)
     dp.include_router(fsm_file.router)
     dp.include_router(connection_manager.router)
     dp.include_router(second_level.router)

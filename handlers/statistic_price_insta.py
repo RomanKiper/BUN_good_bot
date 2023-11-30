@@ -1,5 +1,5 @@
 from aiogram import Router, F, types, Bot
-from aiogram.types import Message, InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import Message, InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from lexicon.lexicon import LEXICON_PRICE, LEXICON_btn_main_menu
 
 router = Router()
@@ -55,6 +55,7 @@ markup_prev_next_insta = InlineKeyboardMarkup(inline_keyboard=keyboard_prev_next
 
 
 @router.callback_query(F.data == 'instagram_sl')
+# async def on_start(message: Message, bot: Bot):
 async def on_start(message: Message, bot: Bot):
     await bot.send_photo(chat_id=message.from_user.id,
                          photo=photo_ids[current_photo_index],
@@ -74,6 +75,7 @@ async def on_next_photo(callback: types.CallbackQuery, bot: Bot):
                                      caption=caption_dict[photo_ids[current_photo_index]],
                                  ),
                                  reply_markup=markup_prev_next_insta)
+    
 
 
 # Обработчик инлайн кнопки "Предыдущее фото"
