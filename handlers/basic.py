@@ -1,10 +1,14 @@
 from aiogram import Router, F, types, Bot
 from aiogram.filters import Command, CommandStart
-from aiogram.types import CallbackQuery, Message
+from aiogram.types import CallbackQuery, Message, User
+from sqlalchemy import select
+
+import db
 from lexicon.lexicon import LEXICON_RU
 from keyboards.inline.inline_main_second_menu import create_inline_kb_main_menu, create_inline_kb_second_menu
 from keyboards.inline.inline_employee import inline_kb_employee
 from aiogram.types import ContentType
+from db.user import User, User_message
 
 router = Router()
 
@@ -14,6 +18,7 @@ async def process_start_command(message: Message):
     await message.answer_sticker("CAACAgIAAxkBAAEKq3ZlQ_rDGclAu2sg_OVA3KU0xmNaLwACNhYAAnJroEul2k1dhz9kKTME")
     await message.answer(text=f"{message.from_user.first_name}, {LEXICON_RU['/start']}")
     await message.delete()
+
 
 
 @router.message(Command(commands='help'))
