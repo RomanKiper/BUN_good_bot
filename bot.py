@@ -32,8 +32,7 @@ async def main():
     bot = Bot(token=config.tg_bot.token,
               parse_mode='HTML')
     dp = Dispatcher()
-    # dp.message.middleware(Registration_check)
-    # dp.callback_query.middleware(Registration_check)
+
 
     await set_main_menu(bot)
 
@@ -47,6 +46,9 @@ async def main():
     )
 
     print(postger_url)
+
+    async def start_bot(bot: Bot):
+        await bot.send_message(text="Я запустил бота.")
 
     async_engine = create_async_engine(postger_url)
     session_maker = get_session_maker(async_engine)
@@ -67,6 +69,8 @@ async def main():
 
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot, session_maker=session_maker)
+    await bot.send_message(config.tg_bot.id_admin, text="Bun_bot запущен!")
+
 
 
 if __name__ == '__main__':
