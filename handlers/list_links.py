@@ -40,5 +40,6 @@ async def process_tglink_command(message: Message):
 
 @router.callback_query(F.data == 'tables_links')
 async def inline_get_tables_links(callback: types.CallbackQuery):
-    await callback.message.answer(text=LEXICON_RU['/list_links_work_tables'])
+    await callback.message.answer(text=LEXICON_RU['/list_links_work_tables'],
+                                  disable_web_page_preview=True)
     await callback.message.delete()

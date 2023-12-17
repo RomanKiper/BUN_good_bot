@@ -5,6 +5,7 @@ from aiogram.fsm.state import default_state, State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import CallbackQuery, Message
 from keyboards.inline.inline_connection_manager import markup_yes_no
+from db.database_sqlite3 import edit_profile_agree
 
 storage = MemoryStorage()
 router = Router()

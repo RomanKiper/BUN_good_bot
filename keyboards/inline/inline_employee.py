@@ -9,15 +9,37 @@ inline_kb_employee = InlineKeyboardMarkup(inline_keyboard=[
     ],
     [
         InlineKeyboardButton(
-            text="Школа",
+            text="Рабочие ссылки",
+            callback_data='work_links'
+        )
+    ],
+    [
+        InlineKeyboardButton(
+            text="Школа📝",
             callback_data='school'
         )
     ],
     [
         InlineKeyboardButton(
-            text="Обновления",
+            text="Апгрейд🚀",
             callback_data='improvements'
         )
     ],
 
+])
+
+
+inline_kb_working_links = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton(
+            text="Ссылки Insta",
+            callback_data='insta_links'
+        )
+    ],
+    [
+        InlineKeyboardButton(
+            text="Ссылки TikTok",
+            callback_data='tiktok_links'
+        )
+    ],
 ])

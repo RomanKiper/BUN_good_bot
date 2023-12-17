@@ -1,22 +1,18 @@
 import asyncio
 import logging
-import os
-from aiogram import Bot, Dispatcher, types
-from sqlalchemy import URL
-
-import db.user
-
+from aiogram import Bot, Dispatcher
 from config_data.config import Config, load_config
 from keyboards.main_meny import set_main_menu
-from db import create_async_engine, get_session_maker
 from handlers import basic, list_links, second_level, connection_manager, fsm_file, \
     statistic_price_telegram, statistic_price_site, statistic_price_insta, statistic_price_action, \
-statistic_price_app
-
-
-
+    statistic_price_app, employee, blogers
+from db.database_sqlite3 import db_start
 
 logger = logging.getLogger(__name__)
+
+
+# async def on_startup(_):
+#     await db_start()
 
 
 async def main():
@@ -33,30 +29,12 @@ async def main():
               parse_mode='HTML')
     dp = Dispatcher()
 
-
     await set_main_menu(bot)
-
-    postger_url = URL.create(
-        "postgresql+asyncpg",
-        username=os.getenv("DATABASE_USERNAME"),
-        password=os.getenv("DATABASE_PASSWORD"),
-        host=os.getenv("DATABASE_HOST"),
-        port=os.getenv("DATABASE_PORT"),
-        database=os.getenv("DATABASE_NAME")
-    )
-
-    print(postger_url)
-
-    async def start_bot(bot: Bot):
-        await bot.send_message(text="Я запустил бота.")
-
-    async_engine = create_async_engine(postger_url)
-    session_maker = get_session_maker(async_engine)
-    # Делегирвано alembic
-    # await proceed_schemas(async_engine, BaseModel.metadata)
 
     # Регистриуем роутеры в диспетчере
     dp.include_router(statistic_price_telegram.router)
+    dp.include_router(employee.router)
+    dp.include_router(blogers.router)
     dp.include_router(statistic_price_app.router)
     dp.include_router(statistic_price_insta.router)
     dp.include_router(statistic_price_site.router)
@@ -67,10 +45,11 @@ async def main():
     dp.include_router(list_links.router)
     dp.include_router(basic.router)
 
-    await bot.delete_webhook(drop_pending_updates=True)
-    await dp.start_polling(bot, session_maker=session_maker)
-    await bot.send_message(config.tg_bot.id_admin, text="Bun_bot запущен!")
 
+    await bot.send_message(config.tg_bot.id_admin, text="Bun_bot запущен!")
+    await bot.delete_webhook(drop_pending_updates=True)
+    await db_start()
+    await dp.start_polling(bot)
 
 
 if __name__ == '__main__':

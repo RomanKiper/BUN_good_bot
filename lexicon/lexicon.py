@@ -37,8 +37,10 @@ LEXICON_RU: dict[str, str] = {
         "Бизнес-центр Royal Plaza (Роял Плаза)\n"
         "29 - 30 этаж\n",
 
-    '/description': '😎Bun_bot является личным помошником КРМ. Основная задача - оперативно давать запрошенную информацию.'
-                    'На данном этапе Bun_bot является "сырой" моделью, но его функционал будет постоянно совершенствоваться. И в итоге он станет незаменимым помошником в работе.🥷',
+    '/description': '😎Bun_bot - специалит по качественному продвижению в компании Сливки бай.\n'
+                    '😎Bun_bot поможет вам получить цены, статистику, примеры. Ознакомит вас с основными вариантами размещения на Сливках.\n'
+                    'А также поможет связаться с мееджером🤓 по продажам рекламных услуг.'
+                    ,
 
     'no_echo': 'Данный тип апдейтов не поддерживается '
                'методом send_copy',
@@ -75,8 +77,9 @@ LEXICON_RU: dict[str, str] = {
     ,
     '/list_links_work_tables': '<b>Рабочие таблицы/регламенты(только для работкников  Slivkiby):</b>\n\n'
                                '<a href="https://docs.google.com/spreadsheets/d/13lJebGgLptSelDHMcb_-QWP3SfQQ2TNry1td0qFTPBk/edit#gid=654343601">Таблица инстаграм.</a>\n\n'
-                               '<a href="https://docs.google.com/document/d/12wgVsiGgn-3IuwG3n2p7RpEgN69u_-7d9w60vk3KubQ/edit?pli=1#heading=h.c6cgsmwqyj3k">Мотивация Отдел продаж Slivkiby. Минск.</a>\n\n'
-                               '<a href="https://docs.google.com/spreadsheets/d/1BWHJ3xwKwhtMKApPSwXHpF2s2wifQ1Xregtj7zfaJ1A/edit#gid=1293730834">Дневные отчеты/посещаемость</a>\n\n'
+                               '<a href="https://docs.google.com/spreadsheets/d/1BWHJ3xwKwhtMKApPSwXHpF2s2wifQ1Xregtj7zfaJ1A/edit#gid=1293730834">Дневные отчеты/посещаемость.</a>\n\n'
+                               '<a href="https://docs.google.com/spreadsheets/d/1hHsBoWh8uM9ENREd2ARvIxlH0AwcYuH6PcxrCDDbiXw/edit?userstoinvite=roman@slivki.by&sharingaction=manageaccess&role=writer#gid=443600561">Большая таблица.</a>\n\n'
+                               '<a href="https://docs.google.com/document/d/12wgVsiGgn-3IuwG3n2p7RpEgN69u_-7d9w60vk3KubQ/edit?pli=1#heading=h.6vbdo72hsqbe">Условия работы/регламенты.</a>\n\n'
 
 }
 
@@ -89,7 +92,7 @@ LEXICON_COMMANDS: dict[str, str] = {
 
 LEXICON_btn_main_menu: dict[str, str] = {
     'btn_main_menu_1': 'Цены и статистика',
-    'btn_main_menu_2': 'Топовые акции',
+    'btn_main_menu_2': 'Наши блогеры👨‍🎤',
     'btn_main_menu_3': 'Сливки это',
     'btn_main_menu_4': 'FAQ🤯',
     'btn_main_menu_5': 'Наш адрес',
@@ -246,7 +249,8 @@ LEXICON_PRICE: dict[str, str] = {
                    'Канал - slivkiby (365 000 подписчиков).\n'
                    'Канал giperspros (108 000 подписчиков).\n'
                    'Канал slivkiby_beauty (23 300 подписчиков).\n'
-                   '✅12 региональных каналов.',
+                   '✅12 региональных каналов.\n'
+                   'Все каналы /insta_links',
     'insta_info4': '<b>Основной канал slivkiby.</b>\n'
                    '✅365 000 подписчиков.\n'
                    '✅200 000+ охват поста в ленте.\n'
@@ -298,6 +302,7 @@ LEXICON_PRICE: dict[str, str] = {
                  '✅Появляется при первом заходе в приложение.\n'
                  '✅В ротации может быть до 5 компаний.\n'
                  '✅Материла и ссылку можно менять.\n'
+                 '✅Показы - 563 573, клики - 6 572.\n'
                  '✅CTR - 0.17%|CPM-1.65 руб.\n',
     'app_info3': '<b>Бренд-старт в мобильном приложении.</b>\n'
                  '💵Минск. 10 суток - 1498 руб.\n'
@@ -314,6 +319,28 @@ LEXICON_PRICE: dict[str, str] = {
                  'Либо бесплатно, при его создании в instagram.\n'
                  '✅Ссылка ведет на нужную страницу.\n\n'
                  '<a href="https://www.slivki.by/prilozhenie-skidok">Скачать приложение</a>\n',
+
+    'bloger1': 'AgACAgIAAxkBAAIVJ2V7fISQTIiBVivGV2tTKxttWntmAAL70DEbvgAB2EsJO5QZVrYNSgEAAwIAA3MAAzME',
+    'bloger2': 'AgACAgIAAxkBAAIVJGV7fHiN7me-tUA0Vxp6KHN-VQ_jAAL60DEbvgAB2Etat99VyR75xAEAAwIAA3MAAzME',
+    'bloger3': 'AgACAgIAAxkBAAIVKmV7fJrVclb_4UynpSPRGxETT15IAAL80DEbvgAB2Et3TvR1837xwQEAAwIAA3MAAzME',
+    'bloger4': 'AgACAgIAAxkBAAIVLWV7fKzX9hzFCg15PrBXpgLU48e4AAL90DEbvgAB2EvwdJvgygykYQEAAwIAA3MAAzME',
+    'bloger5': 'AgACAgIAAxkBAAIVSGV8yQxnxzTwf9bF87Hc7EVAwbRoAAJP1jEbPb_hSyb08EUryt5JAQADAgADcwADMwQ',
+    'bloger6': 'AgACAgIAAxkBAAIVRWV8yP_Fe76w9ZjkcUZif74SJf16AAJS1jEbPb_hS9urlkXBTqgTAQADAgADcwADMwQ',
+    'bloger7': 'AgACAgIAAxkBAAIVS2V8yVfCgu-QpJfBCyf6OJZLRikhAAKZ1jEbiujgS5FVDLCpB-VHAQADAgADcwADMwQ',
+    'bloger_info': '<b>Диана.</b>\n'
+                 '<a href="https://www.instagram.com/diana.blaga/">Инстаграм Дианы.</a>\n',
+    'bloger_info1': '<b>Вадим.</b>\n'
+                   '<a href="https://www.instagram.com/v_vitkovskiy/">Инстаграм Вадима.</a>\n',
+    'bloger_info2': '<b>Катя.</b>\n'
+                   '<a href="https://www.instagram.com/katrin_logunova/">Инстаграм Кати.</a>\n',
+    'bloger_info3': '<b>Тамила.</b>\n'
+                   '<a href="https://www.instagram.com/_tamilaya/">Инстаграм Тамилы.</a>\n',
+    'bloger_info4': '<b>Кирил.</b>\n'
+                    '<a href="https://www.instagram.com/kirrpetrov/">Инстаграм Кирила.</a>\n',
+    'bloger_info5': '<b>Алексей.</b>\n'
+                    '<a href="https://www.instagram.com/foolovskiy/">Инстаграм Алексея.</a>\n',
+    'bloger_info6': '<b>Блогер.</b>\n'
+                    '<a href="https://www.instagram.com/schamaluk/">Инстаграм Блогера.</a>\n',
 
 }
 
