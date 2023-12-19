@@ -12,7 +12,7 @@ router = Router()
 @router.message(CommandStart())
 async def process_start_command(message: Message):
     await create_profile(user_id=message.from_user.id, name=message.from_user.first_name)
-    await message.answer_sticker("CAACAgIAAxkBAAEKq3ZlQ_rDGclAu2sg_OVA3KU0xmNaLwACNhYAAnJroEul2k1dhz9kKTME")
+    # await message.answer_sticker("CAACAgIAAxkBAAEKq3ZlQ_rDGclAu2sg_OVA3KU0xmNaLwACNhYAAnJroEul2k1dhz9kKTME")
     await message.answer(text=f"{message.from_user.first_name}, {LEXICON_RU['/start']}")
 
 
@@ -38,7 +38,7 @@ async def get_main_menu(message: Message):
 async def get_second_menu(callback: types.CallbackQuery):
     keyboard = create_inline_kb_second_menu(2, 'site_slivki_advertising', 'site_slivki_promotion', 'instagram_sl',
                                             'telegram_sl', 'tiktok_sl',
-                                            'app_advertising', 'others_media', 'regions_sl')
+                                            'app_advertising')
     await callback.message.answer(text='В данном разделе ты получишь цены, статистику и примеры размещения рекламы.',
                                   reply_markup=keyboard)
     await callback.message.delete()
