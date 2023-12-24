@@ -36,7 +36,7 @@ button_prev = InlineKeyboardButton(
     callback_data='prev_photo_bloger')
 button_back_to_preview_menu = InlineKeyboardButton(
     text='Назад в меню',
-    callback_data='btn_main_menu_1')
+    callback_data='main_menu')
 keyboard_prev_next: list[list[InlineKeyboardButton]] = [
     [button_prev, button_next],
     [button_back_to_preview_menu]
