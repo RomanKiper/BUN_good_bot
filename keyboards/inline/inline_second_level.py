@@ -13,6 +13,12 @@ inline_links_contract = InlineKeyboardMarkup(inline_keyboard=[
             text="Публичный дог-р оказания рекл-х услуг",
             url="https://www.slivki.by/publichnyj-dogovor-okazaniya-reklamnyh-uslug-i-razmesheniya-akcij"
         )
+    ],
+    [
+        InlineKeyboardButton(
+            text="Назад в меню",
+            callback_data="main_menu"
+        )
     ]
 ])
 

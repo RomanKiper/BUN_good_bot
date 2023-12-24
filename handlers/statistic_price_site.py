@@ -28,7 +28,8 @@ brendbox_premium2 = LEXICON_PRICE["brendbox_premium2"]
 # Список ID фотографий
 photo_ids = [first_photo, photo_podlojka1, photo_podlojka2, photo_podlojka3, banner_top1, banner_top2, banner_top3,
              brendbox1, brendbox2, brendbox3, brendbox_heading1, brendbox_heading2, floating1, floating2,
-             banner_horizontal1, banner_horizontal2, advertising_news1, advertising_news2, brendbox_premium1, brendbox_premium2]
+             banner_horizontal1, banner_horizontal2, advertising_news1, advertising_news2, brendbox_premium1,
+             brendbox_premium2]
 
 caption_dict = {
     first_photo: LEXICON_PRICE['first_photo_info'],
@@ -54,7 +55,6 @@ caption_dict = {
 }
 
 current_photo_index = 0
-
 
 button_next = InlineKeyboardButton(
     text='ВПЕРЕД',

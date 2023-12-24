@@ -17,7 +17,12 @@ def get_inline_connection_manager():
 def get_inline_connection_kb_manager_second():
     buttons_con = [
         [
-            types.InlineKeyboardButton(text="Связаться с менеджером", callback_data="manager"),
+            types.InlineKeyboardButton(text="Связаться с менеджером🤓",
+                                       callback_data="manager"),
+        ],
+        [
+            types.InlineKeyboardButton(text="Назад в меню",
+                                       callback_data="main_menu"),
         ],
     ]
     keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons_con)
@@ -38,17 +43,4 @@ keyboard_yes_no: list[list[InlineKeyboardButton]] = [
 markup_yes_no = InlineKeyboardMarkup(inline_keyboard=keyboard_yes_no)
 
 
-# # Клавиатура в блоке прайсы. Для каждого прайса.
-# connection_manager_button = InlineKeyboardButton(
-#     text='Менедж🤓р',
-#     callback_data='manager'
-# )
-# back_button = InlineKeyboardButton(
-#     text='Назад',
-#     callback_data='btn_main_menu_1')
-# # Добавляем кнопки в клавиатуру в один ряд
-# keyboard_yes_no: list[list[InlineKeyboardButton]] = [
-#     [connection_manager_button, back_button]
-# ]
-# # Создаем объект инлайн-клавиатуры
-# markup_con_manager_back_button = InlineKeyboardMarkup(inline_keyboard=keyboard_yes_no)
+

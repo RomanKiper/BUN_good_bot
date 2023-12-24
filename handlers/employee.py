@@ -47,3 +47,14 @@ async def process_link_command(callback: types.CallbackQuery):
         disable_web_page_preview=True
     )
 
+@router.callback_query(F.data == 'school')
+async def get_school_document(callback: types.CallbackQuery):
+    await callback.message.answer(
+        text='Данный раздел еще не готов.'
+    )
+
+@router.callback_query(F.data == 'improvements')
+async def get_improvements(callback: types.CallbackQuery):
+    await callback.message.answer(
+        text='Данный раздел еще не готов.'
+    )
