@@ -34,10 +34,8 @@ async def get_main_menu(callback: types.CallbackQuery):
                  ' Пользуйтесь возможнстями бота и пишите ваши рекомендации по усовершенствованию бота.',
             reply_markup=inline_kb_employee
         )
-        await callback.delete()
     else:
         await callback.answer(text="Нет прав доступа. Запросите права у администатора.")
-        await callback.delete()
 
 
 @router.callback_query(F.data == 'work_links')
