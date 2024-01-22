@@ -27,15 +27,17 @@ async def get_main_menu(message: Message):
 
 
 @router.callback_query(F.data=='employee')
-async def get_main_menu(callback: types.CallbackQuery):
-    if callback.from_user.id in lst_admin_ids:
-        await callback.answer(
+async def get_main_menu_2(callback: types.CallbackQuery):
+    if callback.message.from_user.id in lst_admin_ids:
+        await callback.message.answer(
             text='У вас права работника компании.'
                  ' Пользуйтесь возможнстями бота и пишите ваши рекомендации по усовершенствованию бота.',
             reply_markup=inline_kb_employee
         )
+        await callback.message.delete()
     else:
-        await callback.answer(text="Нет прав доступа. Запросите права у администатора.")
+        await callback.message.answer(text="Нет прав доступа. Запросите права у администатора.")
+        await callback.message.delete()
 
 
 @router.callback_query(F.data == 'work_links')
