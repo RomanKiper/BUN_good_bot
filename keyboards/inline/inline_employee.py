@@ -42,4 +42,19 @@ inline_kb_working_links = InlineKeyboardMarkup(inline_keyboard=[
             callback_data='tiktok_links'
         )
     ],
+    [
+        InlineKeyboardButton(
+            text="Назад в меню",
+            callback_data='employee'
+        )
+    ],
+])
+
+inline_kb_main_employee = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton(
+            text="Назад в меню",
+            callback_data='employee'
+        )
+    ],
 ])

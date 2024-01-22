@@ -26,6 +26,20 @@ async def get_main_menu(message: Message):
         await message.delete()
 
 
+@router.callback_query(F.data=='employee')
+async def get_main_menu(callback: types.CallbackQuery):
+    if callback.from_user.id in lst_admin_ids:
+        await callback.answer(
+            text='У вас права работника компании.'
+                 ' Пользуйтесь возможнстями бота и пишите ваши рекомендации по усовершенствованию бота.',
+            reply_markup=inline_kb_employee
+        )
+        await callback.delete()
+    else:
+        await callback.answer(text="Нет прав доступа. Запросите права у администатора.")
+        await callback.delete()
+
+
 @router.callback_query(F.data == 'work_links')
 async def inline_download_work_links(callback: types.CallbackQuery):
     await callback.message.answer(text="👇👇Рабочие ссылки👇👇", reply_markup=inline_kb_working_links)
@@ -50,11 +64,11 @@ async def process_link_command(callback: types.CallbackQuery):
 @router.callback_query(F.data == 'school')
 async def get_school_document(callback: types.CallbackQuery):
     await callback.message.answer(
-        text='Данный раздел еще не готов.'
+        text='Данный раздел находится в разработке.'
     )
 
 @router.callback_query(F.data == 'improvements')
 async def get_improvements(callback: types.CallbackQuery):
     await callback.message.answer(
-        text='Данный раздел еще не готов.'
+        text='Данный раздел находится в разработке.'
     )

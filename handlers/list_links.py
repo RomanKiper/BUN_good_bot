@@ -3,6 +3,7 @@ from aiogram.filters import Command
 from aiogram.types import Message
 from lexicon.lexicon import LEXICON_RU
 from keyboards.inline.inline_media_and_app import inline_list_media
+from keyboards.inline.inline_employee import inline_kb_main_employee
 
 router = Router()
 
@@ -41,5 +42,6 @@ async def process_tglink_command(message: Message):
 @router.callback_query(F.data == 'tables_links')
 async def inline_get_tables_links(callback: types.CallbackQuery):
     await callback.message.answer(text=LEXICON_RU['/list_links_work_tables'],
-                                  disable_web_page_preview=True)
+                                  disable_web_page_preview=True,
+                                  reply_markup=inline_kb_main_employee)
     await callback.message.delete()
