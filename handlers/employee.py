@@ -28,7 +28,7 @@ async def get_main_menu(message: Message):
 
 @router.callback_query(F.data=='employee')
 async def get_main_menu_2(callback: types.CallbackQuery):
-    if callback.message.from_user.id in lst_admin_ids:
+    if callback.from_user.id in lst_admin_ids:
         await callback.message.answer(
             text='У вас права работника компании.'
                  ' Пользуйтесь возможнстями бота и пишите ваши рекомендации по усовершенствованию бота.',
