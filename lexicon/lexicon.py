@@ -322,7 +322,7 @@ LEXICON_PRICE: dict[str, str] = {
 
     'bloger1': 'AgACAgIAAxkBAAIVJ2V7fISQTIiBVivGV2tTKxttWntmAAL70DEbvgAB2EsJO5QZVrYNSgEAAwIAA3MAAzME',
     'bloger2': 'AgACAgIAAxkBAAIVJGV7fHiN7me-tUA0Vxp6KHN-VQ_jAAL60DEbvgAB2Etat99VyR75xAEAAwIAA3MAAzME',
-    'bloger3': 'AgACAgIAAxkBAAIVKmV7fJrVclb_4UynpSPRGxETT15IAAL80DEbvgAB2Et3TvR1837xwQEAAwIAA3MAAzME',
+    'bloger3': 'AgACAgIAAxkBAAIb82WwLDvo0KZjgkB0BsiuEAbl4To6AALFzzEb8G6JSYntkJSwRQuQAQADAgADcwADNAQ',
     'bloger4': 'AgACAgIAAxkBAAIVLWV7fKzX9hzFCg15PrBXpgLU48e4AAL90DEbvgAB2EvwdJvgygykYQEAAwIAA3MAAzME',
     'bloger5': 'AgACAgIAAxkBAAIVSGV8yQxnxzTwf9bF87Hc7EVAwbRoAAJP1jEbPb_hSyb08EUryt5JAQADAgADcwADMwQ',
     'bloger6': 'AgACAgIAAxkBAAIVRWV8yP_Fe76w9ZjkcUZif74SJf16AAJS1jEbPb_hS9urlkXBTqgTAQADAgADcwADMwQ',
@@ -340,7 +340,7 @@ LEXICON_PRICE: dict[str, str] = {
     'bloger_info5': '<b>Алексей.</b>\n'
                     '<a href="https://www.instagram.com/foolovskiy/">Инстаграм Алексея.</a>\n',
     'bloger_info6': '<b>Костя.</b>\n'
-                    '<a href="https://www.instagram.com/schamaluk/">Инстаграм Блогера.</a>\n',
+                    '<a href="https://www.instagram.com/schamaluk/">Инстаграм Кости.</a>\n',
 
     'tiktok1': '<b>TIK-TOK SLIVKI.</b>\n'
                '✅170 000 подписчиков.\n'
