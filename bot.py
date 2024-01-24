@@ -5,7 +5,7 @@ from config_data.config import Config, load_config
 from keyboards.main_meny import set_main_menu
 from handlers import basic, list_links, second_level, connection_manager, fsm_file, \
     statistic_price_telegram, statistic_price_site, statistic_price_insta, statistic_price_action, \
-    statistic_price_app, employee, blogers, statistic_price_tiktok, faq_hendler
+    statistic_price_app, employee, blogers, statistic_price_tiktok, faq_hendler, help_2
 from db.database_sqlite3 import db_start
 
 logger = logging.getLogger(__name__)
@@ -45,6 +45,7 @@ async def main():
     dp.include_router(connection_manager.router)
     dp.include_router(second_level.router)
     dp.include_router(list_links.router)
+    dp.include_router(help_2.router)
     dp.include_router(basic.router)
 
 

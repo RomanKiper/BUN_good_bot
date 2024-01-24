@@ -58,9 +58,8 @@ async def get_second_menu(callback: types.CallbackQuery):
 
 @router.message(Command(commands='description'))
 async def get_description(message: Message):
-    await message.delete()
     await message.answer(text=LEXICON_RU['/description'])
-
+    await message.delete()
 
 
 @router.message()
