@@ -332,8 +332,7 @@ LEXICON_PRICE: dict[str, str] = {
                    '<a href="https://www.instagram.com/diana.blaga/">Инстаграм Дианы.</a>\n',
     'bloger_info1': '<b>Вадим.</b>\n'
                     '<a href="https://www.instagram.com/v_vitkovskiy/">Инстаграм Вадима.</a>\n',
-    'bloger_info2': '<b>Катя.</b>\n'
-                    '<a href="https://www.instagram.com/katrin_logunova/">Инстаграм Кати.</a>\n',
+    'bloger_info2': '<a href="https://www.instagram.com/katrin_logunova/">Инстаграм Кати.</a>\n',
     'bloger_info3': '<b>Тамила.</b>\n'
                     '<a href="https://www.instagram.com/_tamilaya/">Инстаграм Тамилы.</a>\n',
     'bloger_info4': '<b>Кирил.</b>\n'
