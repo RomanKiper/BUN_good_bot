@@ -330,17 +330,14 @@ LEXICON_PRICE: dict[str, str] = {
     'bloger7': 'AgACAgIAAxkBAAIc9GW0L5IUx4-NryhEAfSKaVseB6PTAALp3DEbEJqgSWXbRvTY2y-MAQADAgADcwADNAQ',
     'bloger_info': '<b>Диана.</b>\n'
                    '<a href="https://www.instagram.com/diana.blaga/">Инстаграм Дианы.</a>\n',
-    'bloger_info1': '<b>Вадим.</b>\n'
-                    '<a href="https://www.instagram.com/v_vitkovskiy/">Инстаграм Вадима.</a>\n',
+    'bloger_info1': '<a href="https://www.instagram.com/v_vitkovskiy/">Инстаграм Вадима.</a>\n',
     'bloger_info2': '<a href="https://www.instagram.com/katrin_logunova/">Инстаграм Кати.</a>\n',
     'bloger_info3': '<b>Тамила.</b>\n'
                     '<a href="https://www.instagram.com/_tamilaya/">Инстаграм Тамилы.</a>\n',
     'bloger_info4': '<b>Кирил.</b>\n'
                     '<a href="https://www.instagram.com/kirrpetrov/">Инстаграм Кирила.</a>\n',
-    'bloger_info5': '<b>Алексей.</b>\n'
-                    '<a href="https://www.instagram.com/foolovskiy/">Инстаграм Алексея.</a>\n',
-    'bloger_info6': '<b>Костя.</b>\n'
-                    '<a href="https://www.instagram.com/schamaluk/">Инстаграм Кости.</a>\n',
+    'bloger_info5': '<a href="https://www.instagram.com/foolovskiy/">Инстаграм Алексея.</a>\n',
+    'bloger_info6': '<a href="https://www.instagram.com/schamaluk/">Инстаграм Кости.</a>\n',
 
     'tiktok1': '<b>TIK-TOK SLIVKI.</b>\n'
                '✅170 000 подписчиков.\n'
