@@ -322,12 +322,12 @@ LEXICON_PRICE: dict[str, str] = {
                  '<a href="https://www.slivki.by/prilozhenie-skidok">Скачать приложение</a>\n',
 
     'bloger1': 'AgACAgIAAxkBAAIVJ2V7fISQTIiBVivGV2tTKxttWntmAAL70DEbvgAB2EsJO5QZVrYNSgEAAwIAA3MAAzME',
-    'bloger2': 'AgACAgIAAxkBAAIVJGV7fHiN7me-tUA0Vxp6KHN-VQ_jAAL60DEbvgAB2Etat99VyR75xAEAAwIAA3MAAzME',
+    'bloger2': 'AgACAgIAAxkBAAIc8WW0LvJwaWD-o0U6DCuSQK1uQq1EAALn3DEbEJqgSUsw_pYRMRvvAQADAgADcwADNAQ',
     'bloger3': 'AgACAgIAAxkBAAIc5mW0JGIB9Ed2wlOlbyE-yT2CVAGXAAL50jEbnX2hSZq3WmNvy7PmAQADAgADcwADNAQ',
     'bloger4': 'AgACAgIAAxkBAAIVLWV7fKzX9hzFCg15PrBXpgLU48e4AAL90DEbvgAB2EvwdJvgygykYQEAAwIAA3MAAzME',
     'bloger5': 'AgACAgIAAxkBAAIVSGV8yQxnxzTwf9bF87Hc7EVAwbRoAAJP1jEbPb_hSyb08EUryt5JAQADAgADcwADMwQ',
-    'bloger6': 'AgACAgIAAxkBAAIVRWV8yP_Fe76w9ZjkcUZif74SJf16AAJS1jEbPb_hS9urlkXBTqgTAQADAgADcwADMwQ',
-    'bloger7': 'AgACAgIAAxkBAAIVS2V8yVfCgu-QpJfBCyf6OJZLRikhAAKZ1jEbiujgS5FVDLCpB-VHAQADAgADcwADMwQ',
+    'bloger6': 'AgACAgIAAxkBAAIc7mW0LpZhb3lJH3a-k7fUFOFyS_I4AALk3DEbEJqgSZA7p54suzQ-AQADAgADcwADNAQ',
+    'bloger7': 'AgACAgIAAxkBAAIc9GW0L5IUx4-NryhEAfSKaVseB6PTAALp3DEbEJqgSWXbRvTY2y-MAQADAgADcwADNAQ',
     'bloger_info': '<b>Диана.</b>\n'
                    '<a href="https://www.instagram.com/diana.blaga/">Инстаграм Дианы.</a>\n',
     'bloger_info1': '<b>Вадим.</b>\n'
