@@ -321,23 +321,24 @@ LEXICON_PRICE: dict[str, str] = {
                  '✅Ссылка ведет на нужную страницу.\n\n'
                  '<a href="https://www.slivki.by/prilozhenie-skidok">Скачать приложение</a>\n',
 
-    'bloger1': 'AgACAgIAAxkBAAIVJ2V7fISQTIiBVivGV2tTKxttWntmAAL70DEbvgAB2EsJO5QZVrYNSgEAAwIAA3MAAzME',
-    'bloger2': 'AgACAgIAAxkBAAIc8WW0LvJwaWD-o0U6DCuSQK1uQq1EAALn3DEbEJqgSUsw_pYRMRvvAQADAgADcwADNAQ',
-    'bloger3': 'AgACAgIAAxkBAAIc5mW0JGIB9Ed2wlOlbyE-yT2CVAGXAAL50jEbnX2hSZq3WmNvy7PmAQADAgADcwADNAQ',
-    'bloger4': 'AgACAgIAAxkBAAIVLWV7fKzX9hzFCg15PrBXpgLU48e4AAL90DEbvgAB2EvwdJvgygykYQEAAwIAA3MAAzME',
-    'bloger5': 'AgACAgIAAxkBAAIVSGV8yQxnxzTwf9bF87Hc7EVAwbRoAAJP1jEbPb_hSyb08EUryt5JAQADAgADcwADMwQ',
-    'bloger6': 'AgACAgIAAxkBAAIc7mW0LpZhb3lJH3a-k7fUFOFyS_I4AALk3DEbEJqgSZA7p54suzQ-AQADAgADcwADNAQ',
-    'bloger7': 'AgACAgIAAxkBAAIc9GW0L5IUx4-NryhEAfSKaVseB6PTAALp3DEbEJqgSWXbRvTY2y-MAQADAgADcwADNAQ',
-    'bloger_info': '<b>Диана.</b>\n'
-                   '<a href="https://www.instagram.com/diana.blaga/">Инстаграм Дианы.</a>\n',
-    'bloger_info1': '<a href="https://www.instagram.com/v_vitkovskiy/">Инстаграм Вадима.</a>\n',
-    'bloger_info2': '<a href="https://www.instagram.com/katrin_logunova/">Инстаграм Кати.</a>\n',
-    'bloger_info3': '<b>Тамила.</b>\n'
-                    '<a href="https://www.instagram.com/_tamilaya/">Инстаграм Тамилы.</a>\n',
-    'bloger_info4': '<b>Кирил.</b>\n'
-                    '<a href="https://www.instagram.com/kirrpetrov/">Инстаграм Кирила.</a>\n',
-    'bloger_info5': '<a href="https://www.instagram.com/foolovskiy/">Инстаграм Алексея.</a>\n',
-    'bloger_info6': '<a href="https://www.instagram.com/schamaluk/">Инстаграм Кости.</a>\n',
+    'bloger1': 'AgACAgIAAxkBAAIc_2W1dZqOJ4j7wAp6GcryvM04D_opAAI-2jEb9EyxSaSh1idlup65AQADAgADcwADNAQ',
+    'bloger2': 'AgACAgIAAxkBAAIdC2W1gKImroT9Qcl64keS1S9vkdZzAAJj2jEb9EyxSWjWsb88FnHzAQADAgADcwADNAQ',
+    'bloger3': 'AgACAgIAAxkBAAIc_GW1dYmfEI2VwMCUonHYs0ZsypfDAAI82jEb9EyxSQr-lJzx9p7LAQADAgADcwADNAQ',
+    'bloger4': 'AgACAgIAAxkBAAIdAmW1db20yKg15A5ZxoMWMzhy0bl_AAJA2jEb9EyxSRpABMDIEhbsAQADAgADcwADNAQ',
+    'bloger5': 'AgACAgIAAxkBAAIdEWW1gOcXZIE35j0ZrC1dTsa2NCLqAAJl2jEb9EyxSe6e5qlYLkF0AQADAgADcwADNAQ',
+    'bloger6': 'AgACAgIAAxkBAAIdFGW1gQZmw0G54HlEigOqzqUHR_DhAAJm2jEb9EyxSb_vgKggnXiLAQADAgADcwADNAQ',
+    'bloger7': 'AgACAgIAAxkBAAIdCGW1gJGcHAUo8Cvp6erFoON8N5cHAAJi2jEb9EyxSQmAtO6p76ZhAQADAgADcwADNAQ',
+    'bloger8': 'AgACAgIAAxkBAAIdBWW1gEn0Uz5hRzMoLinmmu8C6JG7AAJg2jEb9EyxSWrqhWr9c9qsAQADAgADcwADNAQ',
+    'bloger9': 'AgACAgIAAxkBAAIdDmW1gNKr4XGQyoxlLyQ3JVLVdwbkAAJk2jEb9EyxSfLXDRFbUX_jAQADAgADcwADNAQ',
+    'bloger_info1':  '<a href="https://www.instagram.com/diana.blaga/">Инстаграм Дианы.</a>\n',
+    'bloger_info2': '<a href="https://www.instagram.com/v_vitkovskiy/">Инстаграм Вадима.</a>\n',
+    'bloger_info3': '<a href="https://www.instagram.com/katrin_logunova/">Инстаграм Кати.</a>\n',
+    'bloger_info4': '<a href="https://www.instagram.com/_tamilaya/">Инстаграм Тамилы.</a>\n',
+    'bloger_info5': '<a href="https://www.instagram.com/kirrpetrov/">Инстаграм Кирила.</a>\n',
+    'bloger_info6': '<a href="https://www.instagram.com/foolovskiy/">Инстаграм Алексея.</a>\n',
+    'bloger_info7': '<a href="https://www.instagram.com/yanapytko/">Инстаграм Яны.</a>\n',
+    'bloger_info8': '<a href="https://www.instagram.com/pisaryk26/">Инстаграм Анны.</a>\n',
+    'bloger_info9': '<a href="https://www.instagram.com/schamaluk/">Инстаграм Кости.</a>\n',
 
     'tiktok1': '<b>TIK-TOK SLIVKI.</b>\n'
                '✅170 000 подписчиков.\n'

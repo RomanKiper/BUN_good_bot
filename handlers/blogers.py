@@ -11,19 +11,23 @@ bloger4 = LEXICON_PRICE['bloger4']
 bloger5 = LEXICON_PRICE['bloger5']
 bloger6 = LEXICON_PRICE['bloger6']
 bloger7 = LEXICON_PRICE['bloger7']
+bloger8 = LEXICON_PRICE['bloger8']
+bloger9 = LEXICON_PRICE['bloger9']
 
 
 # Список ID фотографий
 photo_ids = [bloger1, bloger2, bloger3, bloger4, bloger5, bloger6, bloger7 ]
 
 caption_dict = {
-    bloger1: LEXICON_PRICE['bloger_info'],
-    bloger2: LEXICON_PRICE['bloger_info1'],
-    bloger3: LEXICON_PRICE['bloger_info2'],
-    bloger4: LEXICON_PRICE['bloger_info3'],
-    bloger5: LEXICON_PRICE['bloger_info4'],
-    bloger6: LEXICON_PRICE['bloger_info5'],
-    bloger7: LEXICON_PRICE['bloger_info6'],
+    bloger1: LEXICON_PRICE['bloger_info1'],
+    bloger2: LEXICON_PRICE['bloger_info2'],
+    bloger3: LEXICON_PRICE['bloger_info3'],
+    bloger4: LEXICON_PRICE['bloger_info4'],
+    bloger5: LEXICON_PRICE['bloger_info5'],
+    bloger6: LEXICON_PRICE['bloger_info6'],
+    bloger7: LEXICON_PRICE['bloger_info7'],
+    bloger8: LEXICON_PRICE['bloger_info8'],
+    bloger9: LEXICON_PRICE['bloger_info9'],
 }
 
 current_photo_index = 0
