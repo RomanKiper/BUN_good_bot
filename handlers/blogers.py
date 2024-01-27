@@ -16,7 +16,7 @@ bloger9 = LEXICON_PRICE['bloger9']
 
 
 # Список ID фотографий
-photo_ids = [bloger1, bloger2, bloger3, bloger4, bloger5, bloger6, bloger7 ]
+photo_ids = [bloger1, bloger2, bloger3, bloger4, bloger5, bloger6, bloger7, bloger8, bloger9]
 
 caption_dict = {
     bloger1: LEXICON_PRICE['bloger_info1'],
