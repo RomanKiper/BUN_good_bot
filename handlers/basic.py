@@ -65,8 +65,13 @@ async def get_description(message: Message):
 @router.message()
 async def send_echo(message: Message):
     try:
-        await message.send_copy(chat_id=message.chat.id)
-        photo_id = message.photo[0].file_id
-        await message.answer(f"ID фотографии: {photo_id}")
+        if message.photo:
+            await message.send_copy(chat_id=message.chat.id)
+            photo_id = message.photo[0].file_id
+            await message.answer(f"ID фотографии: {photo_id}")
+        elif message.video:
+            await message.send_copy(chat_id=message.chat.id)
+            video_id = message.video.file_id
+            await message.answer(f"ID видео: {video_id}")
     except TypeError:
         await message.reply(text=LEXICON_RU['no_echo'])
