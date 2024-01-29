@@ -4,7 +4,7 @@ from lexicon.lexicon import LEXICON_btn_faq
 
 router = Router()
 
-list_faq = ["faq_1", "faq_2", "faq_3"]
+list_faq = ["faq_1", "faq_2", "faq_2_1", "faq_3"]
 
 button_back = InlineKeyboardButton(
     text='Другие вопросы.',
