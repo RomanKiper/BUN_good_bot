@@ -330,7 +330,7 @@ LEXICON_PRICE: dict[str, str] = {
     'bloger7': 'AgACAgIAAxkBAAIdCGW1gJGcHAUo8Cvp6erFoON8N5cHAAJi2jEb9EyxSQmAtO6p76ZhAQADAgADcwADNAQ',
     'bloger8': 'AgACAgIAAxkBAAIdBWW1gEn0Uz5hRzMoLinmmu8C6JG7AAJg2jEb9EyxSWrqhWr9c9qsAQADAgADcwADNAQ',
     'bloger9': 'AgACAgIAAxkBAAIdDmW1gNKr4XGQyoxlLyQ3JVLVdwbkAAJk2jEb9EyxSfLXDRFbUX_jAQADAgADcwADNAQ',
-    'bloger_info1':  '<a href="https://www.instagram.com/diana.blaga/">Инстаграм Дианы.</a>\n',
+    'bloger_info1': '<a href="https://www.instagram.com/diana.blaga/">Инстаграм Дианы.</a>\n',
     'bloger_info2': '<a href="https://www.instagram.com/v_vitkovskiy/">Инстаграм Вадима.</a>\n',
     'bloger_info3': '<a href="https://www.instagram.com/katrin_logunova/">Инстаграм Кати.</a>\n',
     'bloger_info4': '<a href="https://www.instagram.com/_tamilaya/">Инстаграм Тамилы.</a>\n',
@@ -377,6 +377,19 @@ LEXICON_btn_faq: dict[str, str] = {
                   '✅История отношений между нами.\n'
                   '✅Перспектива сотрудничества.\n'
                   '✅Тематика сотрудничества.\n',
+    'faq_2_1': 'Как вам оплатить?',
+    'faq_2_1_info': '<b>Как вам оплатить?</b>\n'
+                  'Код 22601 Реклама «Платежи за оказание услуг по производству, размещению, распространению рекламы»\n\n'
+                  'Способы оплаты:\n'
+                  '✅С рачетного счета компании.\n'
+                  '✅Через кассу в любом банке/почте. '
+                  'Предоставить счет на оплату от нашей компании кассиру. '
+                  'Обязательно сообщить "за рекламу, <b>не через систему ерип</b>'
+                  'Прислать фото документа, подтвежадющего оплату.\n'
+                  '✅Перевод с банковской карты. Переводы - юрлицу - по реквизитам - произвольный платеж.'
+                  'Зависит от прилжения конкретного банка.\n'
+                  'Из счета для оплаты внесите наши реквизиты. Назначение платежа "не в бюджет за рекламу.'
+                  'Прислать фото документа, подтвежадющего оплату.',
     'faq_3': 'У вас дорого.',
     'faq_3_info': '<b>У вас дорого.</b>\n'
                   'У нас много вариантов размещения. Бюджеты могут быть от 45 рублей в месяд до 10 000 рублей и больше. '

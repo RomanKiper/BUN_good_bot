@@ -34,3 +34,8 @@ async def get_faq_text(callback: types.CallbackQuery, bot: Bot):
                                text=LEXICON_btn_faq['faq_3_info'],
                                reply_markup=markup_back_to_faq)
         await callback.message.delete()
+    elif callback.data == "faq_2_1":
+        await bot.send_message(chat_id=callback.from_user.id,
+                               text=LEXICON_btn_faq['faq_2_1_info'],
+                               reply_markup=markup_back_to_faq)
+        await callback.message.delete()
