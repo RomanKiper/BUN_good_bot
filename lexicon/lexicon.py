@@ -110,12 +110,12 @@ LEXICON_btn_price_statistic: dict[str, str] = {
     'telegram_sl': 'Telegram',
     'tiktok_sl': 'TikTok',
     'app_advertising': 'Приложение',
-    'main_menu': 'Назад в меню',
+    'main_menu': '<b>Назад в меню</b>',
 }
 
 LEXICON_PRICE: dict[str, str] = {
     'photo_telega': 'Следующее фото',
-    'btn_main_menu_1': 'Назад в меню',
+    'btn_main_menu_1': '<b>Назад в меню</b>',
     'manager': 'Менедж🤓р',
     'photo_telejka1': 'AgACAgIAAxkBAAIVnWV_WWmU1Ul6igGnYCW8xkgF2B2kAAJl1DEbenr5S1NmyoDaJlKbAQADAgADcwADMwQ',
     'photo_tekejka2': 'AgACAgIAAxkBAAIP32VQxP_m8psGQI4jDsHz_ORUjZrLAAIa0zEbASOISqKwIV5RRk0UAQADAgADcwADMwQ',
@@ -362,7 +362,7 @@ LEXICON_PRICE: dict[str, str] = {
 }
 
 LEXICON_btn_faq: dict[str, str] = {
-    'main_menu': 'Назад в меню',
+    'main_menu': '<b>Назад в меню</b>',
     'faq_1': 'Как начать сотрудничество?',
     'faq_1_info': '<b>Как начать сотрудничество?</b>\n'
                   '✅Свяжитесь со специалистом по продажам.\n'
