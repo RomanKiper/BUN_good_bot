@@ -79,5 +79,5 @@ async def get_school_document(callback: types.CallbackQuery):
 @router.callback_query(F.data == "improvements")
 async def answer_data_syte(callback: types.CallbackQuery, bot: Bot):
     await bot.send_video(chat_id=callback.from_user.id,
-                         photo="BAACAgIAAxkBAAIdkGW4Ev-osQ-zv_181vBIff_O2iIlAAIQRQACy_rBSZb9tEnMS2elNAQ",
+                         video="BAACAgIAAxkBAAIdkGW4Ev-osQ-zv_181vBIff_O2iIlAAIQRQACy_rBSZb9tEnMS2elNAQ",
                          caption='тестовое описание тестовое описание')
