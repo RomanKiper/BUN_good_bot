@@ -1,4 +1,4 @@
-from aiogram import Router, types, F
+from aiogram import Router, types, F, Bot
 from aiogram.filters import Command
 from aiogram.types import Message
 from config_data.config import load_config, Config
@@ -67,8 +67,17 @@ async def get_school_document(callback: types.CallbackQuery):
         text='Данный раздел находится в разработке.'
     )
 
-@router.callback_query(F.data == 'improvements')
-async def get_improvements(callback: types.CallbackQuery):
-    await callback.message.answer(
-        text='Данный раздел находится в разработке.'
-    )
+# @router.callback_query(F.data == 'improvements')
+# async def get_improvements(callback: types.CallbackQuery):
+#     await callback.message.answer(
+#         text='Данный раздел находится в разработке.'
+#     )
+
+
+
+
+@router.callback_query(F.data == "improvements")
+async def answer_data_syte(callback: types.CallbackQuery, bot: Bot):
+    await bot.send_video(chat_id=callback.from_user.id,
+                         photo="BAACAgIAAxkBAAIdkGW4Ev-osQ-zv_181vBIff_O2iIlAAIQRQACy_rBSZb9tEnMS2elNAQ",
+                         caption='тестовое описание тестовое описание')
