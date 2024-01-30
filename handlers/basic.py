@@ -50,7 +50,7 @@ async def get_main_menu(callback: types.CallbackQuery):
 async def get_second_menu(callback: types.CallbackQuery):
     keyboard = create_inline_kb_second_menu(2, 'site_slivki_advertising', 'site_slivki_promotion', 'instagram_sl',
                                             'telegram_sl', 'tiktok_sl',
-                                            'app_advertising', 'main_menu')
+                                            'app_advertising', 'reviews', 'main_menu')
     await callback.message.answer(text='В данном разделе ты получишь цены, статистику и примеры размещения рекламы.',
                                   reply_markup=keyboard)
     await callback.message.delete()

@@ -110,6 +110,7 @@ LEXICON_btn_price_statistic: dict[str, str] = {
     'telegram_sl': 'Telegram',
     'tiktok_sl': 'TikTok',
     'app_advertising': 'Приложение',
+    'reviews': 'Обзоры/примеры',
     'main_menu': 'Назад в меню',
 }
 
