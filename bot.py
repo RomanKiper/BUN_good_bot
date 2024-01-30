@@ -5,7 +5,9 @@ from config_data.config import Config, load_config
 from keyboards.main_meny import set_main_menu
 from handlers import basic, list_links, second_level, connection_manager, fsm_file, \
     statistic_price_telegram, statistic_price_site, statistic_price_insta, statistic_price_action, \
-    statistic_price_app, employee, blogers, statistic_price_tiktok, faq_hendler, help_2
+    statistic_price_app, employee, blogers, statistic_price_tiktok, faq_hendler, help_2, video_review_main, \
+    video_review_bilding
+
 from db.database_sqlite3 import db_start
 
 logger = logging.getLogger(__name__)
@@ -36,6 +38,8 @@ async def main():
     dp.include_router(statistic_price_tiktok.router)
     dp.include_router(faq_hendler.router)
     dp.include_router(employee.router)
+    dp.include_router(video_review_main.router)
+    dp.include_router(video_review_bilding.router)
     dp.include_router(blogers.router)
     dp.include_router(statistic_price_app.router)
     dp.include_router(statistic_price_insta.router)

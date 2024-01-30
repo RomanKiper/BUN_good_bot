@@ -114,6 +114,21 @@ LEXICON_btn_price_statistic: dict[str, str] = {
     'main_menu': 'Назад в меню',
 }
 
+LEXICON_btn_reviews: dict[str, str] = {
+    'review_bilding': 'Стройматериалы',
+    'review_cars': 'Автомобили',
+    'review_electronics': 'Эл.техика',
+    'review_beauty': 'Бьюти',
+    'review_products': 'Продукты',
+    'review_relax': 'Отдых',
+    'btn_main_menu_1': 'Назад в меню',
+
+    'video_bild1': 'BAACAgIAAxkBAAIeh2W5amSK8tqxgH9WqRlAueFJt4LzAALJQAACsSnISerQUfo1RqT7NAQ',
+    'video_bild2': 'BAACAgIAAxkBAAIeimW5bX_Eqds5L3BBaTdEqOVaRYxIAALPQAACsSnISRhttNal6aLVNAQ',
+    'video_bild_info1': 'Радошковичский завод.',
+    'video_bild_info2': 'СтройАрена.',
+}
+
 LEXICON_PRICE: dict[str, str] = {
     'photo_telega': 'Следующее фото',
     'btn_main_menu_1': 'Назад в меню',

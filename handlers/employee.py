@@ -75,10 +75,3 @@ async def get_improvements(callback: types.CallbackQuery):
     )
 
 
-
-#
-# @router.callback_query(F.data == "improvements")
-# async def answer_data_syte(callback: types.CallbackQuery, bot: Bot):
-#     await bot.send_video(chat_id=callback.from_user.id,
-#                          video="BAACAgIAAxkBAAIdkGW4Ev-osQ-zv_181vBIff_O2iIlAAIQRQACy_rBSZb9tEnMS2elNAQ",
-#                          caption='тестовое описание тестовое описание')
