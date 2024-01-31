@@ -13,7 +13,6 @@ LEXICON_RU: dict[str, str] = {
     '/help': 'Тебе доступны команды:\n'
              '/start - запуск бота.\n'
              '/help - список команд.\n'
-             '/help2 - список дполнительных команд.\n'
              '/description - описание бота.\n'
              '/insta_links - список ссылок на каналы instagram.\n'
              '/tiktok_links - список ссылок на каналы TikTok.\n'
@@ -125,8 +124,12 @@ LEXICON_btn_reviews: dict[str, str] = {
 
     'video_bild1': 'BAACAgIAAxkBAAIeh2W5amSK8tqxgH9WqRlAueFJt4LzAALJQAACsSnISerQUfo1RqT7NAQ',
     'video_bild2': 'BAACAgIAAxkBAAIeimW5bX_Eqds5L3BBaTdEqOVaRYxIAALPQAACsSnISRhttNal6aLVNAQ',
-    'video_bild_info1': 'Радошковичский завод.',
-    'video_bild_info2': 'СтройАрена.',
+    'video_bild3': 'BAACAgIAAxkBAAIfE2W6qPiJMelSvj5gPG4qcOXXpMKbAAJYQwACsSnQSddu_DcdKx8jNAQ',
+    'video_bild4': 'BAACAgIAAxkBAAIfFmW6qWlqn07d1ksLOJUC8WIWQz4ZAAJaQwACsSnQSRPUlFGMsjCcNAQ',
+    'video_bild_info1': 'ОАО “Радошковичский керамический завод”.',
+    'video_bild_info2': 'ООО "Арена Ритейл"',
+    'video_bild_info3': 'ООО «Анексартисиас»',
+    'video_bild_info4': 'ООО «Анексартисиас»',
 }
 
 LEXICON_PRICE: dict[str, str] = {
@@ -412,11 +415,8 @@ LEXICON_btn_faq: dict[str, str] = {
                   'Для того, чтобы выбрать правильные рекламные инструменты и провести эффективную'
                   ' рекламную компанию, необходимо ответственно подойдти к поставленной задаче. Партнерский подход значительно '
                   'повысит шансы на успешный результат.',
-
-}
-
-LEXICON_HELP_2: dict[str, str] = {
-    '/info_promo': '<b>Для запуска акции необходимо:</b>\n'
+    'faq_5': 'Информация для создани акции.\n',
+    'faq_5_info':  '<b>Для запуска акции необходимо:</b>\n'
                    '✅Реквизиты. Указать директора и на основании чего он действует.\n'
                    '✅Логотип.\n'
                    '✅Маркетинговое название.\n'
@@ -432,7 +432,6 @@ LEXICON_HELP_2: dict[str, str] = {
                    '✅Преимущества компании.\n'
                    '✅Заполнить бриф.\n',
 
-    '/help_2': 'Тебе доступны команды:\n'
-               '/info_promo - информация для запуска акции.\n'
-
 }
+
+

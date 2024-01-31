@@ -4,7 +4,7 @@ from lexicon.lexicon import LEXICON_btn_faq
 
 router = Router()
 
-list_faq = ["faq_1", "faq_2", "faq_4", "faq_3"]
+list_faq = ["faq_1", "faq_2", "faq_4", "faq_3", "faq_5"]
 
 button_back = InlineKeyboardButton(
     text='Другие вопросы.',
@@ -37,5 +37,10 @@ async def get_faq_text(callback: types.CallbackQuery, bot: Bot):
     elif callback.data == "faq_4":
         await bot.send_message(chat_id=callback.from_user.id,
                                text=LEXICON_btn_faq['faq_4_info'],
+                               reply_markup=markup_back_to_faq)
+        await callback.message.delete()
+    elif callback.data == "faq_5":
+        await bot.send_message(chat_id=callback.from_user.id,
+                               text=LEXICON_btn_faq['faq_5_info'],
                                reply_markup=markup_back_to_faq)
         await callback.message.delete()

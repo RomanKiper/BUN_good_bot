@@ -52,7 +52,7 @@ async def get_contract_links(callback: types.CallbackQuery):
 
 @router.callback_query(F.data == "btn_main_menu_4")
 async def get_second_menu(callback: types.CallbackQuery):
-    keyboard = get_markup_faq(1, 'faq_4', 'faq_1', 'faq_2', 'faq_3', 'main_menu')
+    keyboard = get_markup_faq(1, 'faq_4', 'faq_5','faq_1', 'faq_2', 'faq_3', 'main_menu')
     await callback.message.answer(text='Частые вопросы и возражения.',
                                   reply_markup=keyboard)
     await callback.message.delete()

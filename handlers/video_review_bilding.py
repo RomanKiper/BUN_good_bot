@@ -6,12 +6,16 @@ router = Router()
 
 video_bild1 = LEXICON_btn_reviews['video_bild1']
 video_bild2 = LEXICON_btn_reviews['video_bild2']
+video_bild3 = LEXICON_btn_reviews['video_bild3']
+video_bild4 = LEXICON_btn_reviews['video_bild4']
 
-video_ids = [video_bild1, video_bild2, ]
+video_ids = [video_bild1, video_bild2, video_bild3, video_bild4, ]
 
 caption_dict = {
     video_bild1: LEXICON_btn_reviews['video_bild_info1'],
     video_bild2: LEXICON_btn_reviews['video_bild_info2'],
+    video_bild3: LEXICON_btn_reviews['video_bild_info3'],
+    video_bild4: LEXICON_btn_reviews['video_bild_info4'],
 }
 
 current_video_index = 0
