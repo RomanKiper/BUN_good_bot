@@ -130,6 +130,20 @@ LEXICON_btn_reviews: dict[str, str] = {
     'video_bild_info2': 'ООО "Арена Ритейл"',
     'video_bild_info3': 'ООО «Анексартисиас»',
     'video_bild_info4': 'ООО «Анексартисиас»',
+
+    'video_elect1': 'BAACAgIAAxkBAAIfJWW6r9bQGoqx3azZ9urW4bE8pbhKAALdOgACsSnYSXRE8JlCWHaoNAQ',
+    'video_elect2': 'BAACAgIAAxkBAAIfJmW6r9Yjya6nLxyErqJzq7_wJvagAALPRgACrhnASXrWSwLx_dpNNAQ',
+    'video_elect_info1': 'ООО «МакСолюшнс».Breezy.',
+    'video_elect_info2': 'Ноутбук HORIZONT H-BOOK PRO.',
+
+    'video_car1': 'BAACAgIAAxkBAAIfNWW6su6p_dc5Lk1b8IBsdfJS_zMyAAIBOwACsSnYSS2cWpoJZtIJNAQ',
+    'video_car2': 'BAACAgIAAxkBAAIfMmW6sEtzpSKYrkCOGSI0nwPjzBffAALfOgACsSnYSd6EJm-NDzN2NAQ',
+    'video_car3': 'BAACAgIAAxkBAAIfJ2W6r9bEYMH5BEH7FU4lTm0qnmAVAALRRgACrhnASdGGu2r80887NAQ',
+    'video_car_info1': 'GSM GRAND SEVEN MOTORS.',
+    'video_car_info2': 'EV-PANDA. Электрические автомобили.',
+    'video_car_info3': 'Доставка авто. WESTMOTORS.',
+
+
 }
 
 LEXICON_PRICE: dict[str, str] = {
