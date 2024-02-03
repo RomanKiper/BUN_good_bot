@@ -14,30 +14,30 @@ lst_admin_ids = config.tg_bot.admin_ids
 
 @router.message(Command(commands='employee'))
 async def get_main_menu(message: Message):
-    if message.from_user.id in lst_admin_ids:
+    # if message.from_user.id in lst_admin_ids:
         await message.answer(
             text='У вас права работника компании.'
                  ' Пользуйтесь возможнстями бота и пишите ваши рекомендации по усовершенствованию бота.',
             reply_markup=inline_kb_employee
         )
         await message.delete()
-    else:
-        await message.answer(text="Нет прав доступа. Запросите права у администатора.")
-        await message.delete()
+    # else:
+    #     await message.answer(text="Нет прав доступа. Запросите права у администатора.")
+    #     await message.delete()
 
 
 @router.callback_query(F.data=='employee')
 async def get_main_menu_2(callback: types.CallbackQuery):
-    if callback.from_user.id in lst_admin_ids:
+    # if callback.from_user.id in lst_admin_ids:
         await callback.message.answer(
             text='У вас права работника компании.'
                  ' Пользуйтесь возможнстями бота и пишите ваши рекомендации по усовершенствованию бота.',
             reply_markup=inline_kb_employee
         )
         await callback.message.delete()
-    else:
-        await callback.message.answer(text="Нет прав доступа. Запросите права у администатора.")
-        await callback.message.delete()
+    # else:
+    #     await callback.message.answer(text="Нет прав доступа. Запросите права у администатора.")
+    #     await callback.message.delete()
 
 
 @router.callback_query(F.data == 'work_links')

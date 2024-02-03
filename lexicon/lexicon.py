@@ -118,7 +118,7 @@ LEXICON_btn_reviews: dict[str, str] = {
     'review_cars': 'Автомобили',
     'review_electronics': 'Эл.техика',
     'review_beauty': 'Бьюти',
-    'review_products': 'Продукты',
+    'review_food': 'Еда',
     'review_relax': 'Отдых',
     'btn_main_menu_1': 'Назад в меню',
 
@@ -143,7 +143,10 @@ LEXICON_btn_reviews: dict[str, str] = {
     'video_car_info2': 'EV-PANDA. Электрические автомобили.',
     'video_car_info3': 'Доставка авто. WESTMOTORS.',
 
-
+    'video_food1': 'BAACAgIAAxkBAAIf9WW78L3VfMR2WAOF-31l2Wz1QCyzAALDRQACfkrhScDS277ZTvYzNAQ',
+    'video_food2': 'BAACAgIAAxkBAAIf-GW78TUHuYwJmrLHqimWH7ErpPUvAALHRQACfkrhSVUnYLR5uIVdNAQ',
+    'video_food_info1': 'Обзор суши. Корпоратив Сливки Бай.',
+    'video_food_info2': 'Panzarotti. Галерея Минск.',
 }
 
 LEXICON_PRICE: dict[str, str] = {
