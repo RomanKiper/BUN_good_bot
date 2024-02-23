@@ -48,8 +48,8 @@ async def main():
     dp.include_router(statistic_price_insta.router)
     dp.include_router(statistic_price_site.router)
     dp.include_router(statistic_price_action.router)
-    dp.include_router(fsm_file.router)
-    dp.include_router(connection_manager.router)
+    # dp.include_router(fsm_file.router)            # функционал связи с менеджером закрыт
+    # dp.include_router(connection_manager.router)  # функционал связи с менеджером закрыт
     dp.include_router(second_level.router)
     dp.include_router(list_links.router)
     dp.include_router(basic.router)

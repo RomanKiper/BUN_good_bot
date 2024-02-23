@@ -1,34 +1,6 @@
 from aiogram import types
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-
-def get_inline_connection_manager():
-    buttons_con = [
-        [
-            types.InlineKeyboardButton(text="Позвонить", callback_data="connect1"),
-            types.InlineKeyboardButton(text="Написать в TG", callback_data="connect2")
-        ],
-        [types.InlineKeyboardButton(text="Свяжитесь со мной", callback_data="connect3")]
-    ]
-    keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons_con)
-    return keyboard
-
-
-def get_inline_connection_kb_manager_second():
-    buttons_con = [
-        [
-            types.InlineKeyboardButton(text="Связаться с менеджером🤓",
-                                       callback_data="manager"),
-        ],
-        [
-            types.InlineKeyboardButton(text="Назад в меню",
-                                       callback_data="main_menu"),
-        ],
-    ]
-    keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons_con)
-    return keyboard
-
-
 # Клаватура yes no
 yes_news_button = InlineKeyboardButton(
     text='Да',
@@ -42,5 +14,33 @@ keyboard_yes_no: list[list[InlineKeyboardButton]] = [
 ]
 markup_yes_no = InlineKeyboardMarkup(inline_keyboard=keyboard_yes_no)
 
+
+def get_inline_connection_kb_manager_second():
+    buttons_con = [
+        # [
+        #     types.InlineKeyboardButton(text="Связаться с менеджером🤓",
+        #                                callback_data="manager"),
+        # ],
+        [
+            types.InlineKeyboardButton(text="Назад в меню",
+                                       callback_data="main_menu"),
+        ],
+    ]
+    keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons_con)
+    return keyboard
+
+
+# Блок для связи с мененеджерм. Отключил.
+#
+# def get_inline_connection_manager():
+#     buttons_con = [
+#         [
+#             types.InlineKeyboardButton(text="Позвонить", callback_data="connect1"),
+#             types.InlineKeyboardButton(text="Написать в TG", callback_data="connect2")
+#         ],
+#         [types.InlineKeyboardButton(text="Свяжитесь со мной", callback_data="connect3")]
+#     ]
+#     keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons_con)
+#     return keyboard
 
 

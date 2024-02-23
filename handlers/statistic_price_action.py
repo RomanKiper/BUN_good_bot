@@ -26,15 +26,15 @@ button_next = InlineKeyboardButton(
 button_prev = InlineKeyboardButton(
     text='Назад',
     callback_data='prev_page_action')
-button_manager = InlineKeyboardButton(
-    text=LEXICON_btn_main_menu['manager'],
-    callback_data='manager')
+# button_manager = InlineKeyboardButton(
+#     text=LEXICON_btn_main_menu['manager'],
+#     callback_data='manager')
 button_back_to_preview_menu = InlineKeyboardButton(
     text='Назад в меню',
     callback_data='btn_main_menu_1')
 keyboard_prev_next: list[list[InlineKeyboardButton]] = [
     [button_prev, button_next],
-    [button_manager, button_back_to_preview_menu]
+    [button_back_to_preview_menu]
 ]
 markup_prev_next_promotion = InlineKeyboardMarkup(inline_keyboard=keyboard_prev_next)
 
