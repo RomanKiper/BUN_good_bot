@@ -1,3 +1,4 @@
+from aiogram import types
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from lexicon.lexicon import LEXICON_btn_main_menu, LEXICON_btn_price_statistic, LEXICON_btn_reviews

@@ -91,14 +91,14 @@ LEXICON_COMMANDS: dict[str, str] = {
 }
 
 LEXICON_btn_main_menu: dict[str, str] = {
-    'btn_main_menu_1': 'Цены и статистика',
-    'btn_main_menu_2': 'Наши блогеры👨‍🎤',
+    'btn_main_menu_2': '👨‍🎤Блогеры',
     'btn_main_menu_3': 'Сливки это',
     'btn_main_menu_4': 'FAQ🤯',
     'btn_main_menu_5': 'Наш адрес',
     'btn_contract_links': 'Договоры',
     'manager': 'Менедж🤓р',
-    'download_app': 'Приложение SLIVKI',
+    'download_app': 'Приложение',
+    'btn_main_menu_1': 'Цены/статистика',
 }
 
 LEXICON_btn_price_statistic: dict[str, str] = {

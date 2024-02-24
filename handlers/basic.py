@@ -24,8 +24,8 @@ async def process_help_command(message: Message):
 
 @router.message(Command(commands='main_menu'))
 async def get_main_menu(message: Message):
-    keyboard = create_inline_kb_main_menu(2, 'btn_main_menu_1', 'btn_main_menu_2', 'btn_main_menu_3', 'btn_main_menu_4',
-                                          'btn_main_menu_5', 'btn_contract_links', 'download_app')
+    keyboard = create_inline_kb_main_menu(2, 'btn_main_menu_1', 'btn_main_menu_3', 'btn_main_menu_2', 'btn_main_menu_4',
+                                          'btn_contract_links', 'download_app', 'btn_main_menu_5')
     await message.answer(
         text='В данном блоке ты можешь получить базовую инфрмацию о компании.',
         reply_markup=keyboard
@@ -35,8 +35,8 @@ async def get_main_menu(message: Message):
 
 @router.callback_query(F.data == 'main_menu')
 async def get_main_menu(callback: types.CallbackQuery):
-    keyboard = create_inline_kb_main_menu(2, 'btn_main_menu_1', 'btn_main_menu_2', 'btn_main_menu_3', 'btn_main_menu_4',
-                                          'btn_main_menu_5', 'btn_contract_links', 'download_app')
+    keyboard = create_inline_kb_main_menu(2, 'btn_main_menu_1', 'btn_main_menu_3', 'btn_main_menu_2', 'btn_main_menu_4',
+                                          'btn_contract_links', 'download_app', 'btn_main_menu_5')
     await callback.message.answer(
         text='В данном блоке ты можешь получить базовую инфрмацию о компании.',
         reply_markup=keyboard
