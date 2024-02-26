@@ -12,6 +12,14 @@ config: Config = load_config()
 lst_admin_ids = config.tg_bot.admin_ids
 
 
+
+@router.callback_query(F.data == 'improvements')
+async def get_improvements(callback: types.CallbackQuery):
+    await callback.message.answer(
+        text='Данный раздел находится в разработке.'
+    )
+
+
 @router.message(Command(commands='employee'))
 async def get_main_menu(message: Message):
     # if message.from_user.id in lst_admin_ids:
@@ -68,10 +76,5 @@ async def get_school_document(callback: types.CallbackQuery):
     )
 
 
-@router.callback_query(F.data == 'improvements')
-async def get_improvements(callback: types.CallbackQuery):
-    await callback.message.answer(
-        text='Данный раздел находится в разработке.'
-    )
 
 
